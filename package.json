@@ -1,0 +1,41 @@
+{
+  "name": "kinder_garden",
+  "version": "1.0.0",
+  "description": "Site about elementary school",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "kinder",
+    "garden",
+    "elementary",
+    "school",
+    "school"
+  ],
+  "author": "Vasyl Bats",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-add-src": "^0.2.0",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-less": "^3.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-requirejs-optimize": "^1.2.0",
+    "gulp-sourcemaps": "^2.5.1",
+    "gulp-uglify": "^2.1.2"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "bootstrap-star-rating": "^4.0.2",
+    "font-awesome": "^4.7.0",
+    "jgrowl": "^1.4.5",
+    "jquery": "^3.2.1",
+    "jquery.scrollto": "^2.1.2",
+    "normalize-css": "^2.3.1",
+    "scrollup": "^1.0.1"
+  }
+}

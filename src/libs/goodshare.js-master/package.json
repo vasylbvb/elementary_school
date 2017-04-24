@@ -1,0 +1,30 @@
+{
+  "name": "goodshare.js",
+  "version": "4.0.6",
+  "description": "Useful modern JavaScript solution that will help your website visitors share a link on social networks and microblogs. Easy to install and configuring on any of your website!",
+  "main": "goodshare.min.js",
+  "scripts": {
+    "dev": "babel src -d dist && ./node_modules/.bin/webpack ./dist/goodshare.js ./goodshare.js",
+    "prod": "babel src -d dist && ./node_modules/.bin/webpack ./dist/goodshare.js ./goodshare.min.js -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/koddr/goodshare.js.git"
+  },
+  "keywords": [
+    "share",
+    "social"
+  ],
+  "author": "Vikky Shostak <vikkyshostak@gmail.com> (https://koddr.me)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/koddr/goodshare.js/issues"
+  },
+  "homepage": "https://koddr.me/projects/goodshare-js",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-polyfill": "^6.20.0",
+    "babel-preset-latest": "^6.16.0",
+    "webpack": "^2.2.0"
+  }
+}

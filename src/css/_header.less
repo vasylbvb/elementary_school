@@ -1,0 +1,157 @@
+@import "_vars";
+@import "_fonts";
+
+.global-header {
+  min-width: 100%;
+  min-height: 205px;
+  margin: 0;
+  border-bottom: 2px solid #004fa3;
+}
+
+//1st line
+.global-header__firstline {
+  min-width: 100%;
+  min-height: 154px;
+  padding: 0;
+  background: @copybook_bg;
+  & > .container {
+    max-width: @main-width;
+    margin: 0 auto;
+    min-height: 154px;
+    & > .row {
+      max-width: @main-width;
+      min-height: 154px;
+    }
+  }
+}
+
+.logo-box-container {
+  height: 100%;
+  min-height: 154px;
+  white-space: nowrap;
+  position: relative;
+  &:before {
+    display: inline-block;
+    content: '';
+    min-height: inherit;
+    height: 100%;
+    width: 0;
+    font-size: 0;
+    vertical-align: middle;
+  }
+  & > a {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    margin-top: -63px;
+    &:hover,
+    &:active,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+}
+
+.logo-box-container a .logo__img-box {
+  display: inline-block;
+  width: 135px;
+  height: 127px;
+  text-align: center;
+  & > .logo__img {
+    width: auto;
+    height: 100%;
+  }
+}
+
+.logo-box-container .logo__text-container {
+  display: inline-block;
+  max-width: 100%;
+  padding-left: 145px;
+  vertical-align: middle;
+  white-space: normal;
+  & > .logo__text {
+    min-height: 95px;
+    padding: 20px 25px;
+    background: #ffffff;
+    border: 1px dashed #bfbfbf;
+    border-radius: 5px;
+    position: relative;
+    &:before {
+      display: block;
+      width: 20px;
+      height: 20px;
+      content: '';
+      border-top: 1px dashed #bfbfbf;
+      border-right: none;
+      border-bottom: none;
+      border-left: 1px dashed #bfbfbf;
+      background: #ffffff;
+      transform: rotate(-20deg) skewX(45deg) scaleY( cos(45deg));
+      position: absolute;
+      left: -11px;
+      top: 50%;
+      margin-top: -10px;
+    }
+    & > .logo__text-firstline {
+      font-weight: lighter;
+      letter-spacing: 1px;
+      font-size: 24px;
+      color: @main-yellow;
+      text-transform: uppercase;
+      margin: 0;
+      & > .logo__text-secondline {
+        display: inline-block;
+        margin: 16px 0 0;
+        text-transform: none;
+        font-size: 22px;
+        color: #1b3645;
+      }
+    }
+  }
+}
+
+.callback-container {
+  height: 154px;
+  &:before {
+    display: inline-block;
+    content: '';
+    min-height: inherit;
+    height: 100%;
+    width: 0;
+    font-size: 0;
+    vertical-align: middle;
+  }
+  & > .callback {
+    display: inline-block;
+    vertical-align: middle;
+    color: #1b3645;
+    font-family: "Roboto-Regular";
+    font-size: 16px;
+  }
+}
+
+.callback .textline .blue,
+.callback .phonenumber .blue {
+  color: #0090ed;
+  font-weight: bold;
+}
+
+#phone_circle {
+  float: left;
+  font-size: 24px;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  & > .fa-circle-thin {
+    font-size: inherit;
+  }
+  & > .fa-phone {
+    font-size: 14px;
+  }
+}
+.numberline .phonenumber {
+  margin-left: 30px;
+  font-size: 18px;
+  line-height: 24px;
+}

@@ -1,0 +1,34 @@
+@import "_vars";
+@import "_fonts";
+
+@media (max-width: 615px) {
+  .logo-box-container {
+    text-align: center;
+    &:before {
+      display: none;
+    }
+    & > a {
+      display: block;
+      position: relative;
+      top: 0;
+      left: 0;
+      margin: 0 auto;
+    }
+  }
+
+  .logo-box-container .logo__text-container {
+    display: block;
+    padding-left: 0;
+    padding-top: 20px;
+    & > .logo__text {
+      padding: 15px 20px;
+      &:before {
+        transform: rotate(68deg) skewX(45deg) scaleY(cos(45deg));
+        top: -11px;
+        left: 50%;
+        margin-top: 0;
+        margin-left: -10px;
+      }
+    }
+  }
+}
