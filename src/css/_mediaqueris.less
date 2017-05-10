@@ -32,3 +32,35 @@
     }
   }
 }
+@media (max-width: 768px) {
+  .global-header__secondline,
+  .main-nav,
+  .main-nav > .container,
+  .main-nav__navbar-header {
+    min-height: 1px;
+  }
+  .global-header__secondline {
+    background: transparent;
+    border: none;
+  }
+  .global-header__secondline .row #drop {
+    background: linear-gradient(#00b3fc, #007de4);
+    float: right;
+  }
+  .main-nav__navbar-header {
+    margin: 0 !important;
+  }
+  .main-nav__nav {
+    display: block;
+  }
+  .main-nav__nav .main-nav__item {
+    display: block;
+    border: 0;
+  }
+}
+
+@media (max-width: 992px){
+  .main-nav__item .main-nav__link {
+    padding: 0 3px;
+  }
+}

@@ -15,7 +15,7 @@
         <div class="global-header__firstline">
             <div class="container">
                 <div class="row">
-                    <div class="logo-box-container col-md-9 col-sm-12">
+                    <div class="logo-box-container col-md-9 col-xs-12">
                         <a href="index.html">
                             <span class="logo__img-box">
                                 <img src="images/logo.png" alt="logo" class="logo__img">
@@ -29,7 +29,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="callback-container col-md-3 col-sm-6">
+                    <div class="callback-container col-md-3 col-sm-6 col-xs-9">
                         <div class="callback">
                             <div class="textline">Questions? <span class="blue">Call!</span></div>
                             <div class="numberline">
@@ -50,19 +50,62 @@
                             </div>
                         </div>
                     </div>
-                    <div class="navbtn-box hidden-lg hidden-md visible-sm-block col-sm-6">
+                    <div class="navbtn-box hidden-lg hidden-md visible-sm-block visible-xs-block col-sm-6 col-xs-3">
                         <button data-toggle="collapse" data-target="#main-nav" aria-expanded="false"
                                 class="navbtn navbar-toggle collapsed">
                             <span class="fa fa-stack fa-lg">
                                 <i class="fa fa-square-o fa-stack-2x"></i>
-                                <i class="fa fa-bars fa-stack-1x"></i>
+                                <i class="fa fa-bars fa-stack-1x" id="bars"></i>
                             </span>
                         </button>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="global-header__secondline"></div>
+        <div class="global-header__secondline container-fluid">
+            <div class="row">
+                <div class="col-md-12 col-xs-5" id="drop">
+                    <nav class="navbar navbar-default main-nav">
+                        <div class="container">
+                            <div class="navbar-header main-nav__navbar-header">
+                                <div id="main-nav" class="navbar-collapse collapse" aria-expanded="false"
+                                     style="height: 1px;">
+                                    <ul class="nav navbar-nav main-nav__nav">
+                                        <li class="main-nav__item">
+                                            <a href="company-list.html" class="main-nav__link">About us</a>
+                                        </li>
+                                        <li class="main-nav__item">
+                                            <a href="object_list.html" class="main-nav__link">Courses</a>
+                                        </li>
+                                        <li class="main-nav__item">
+                                            <a href="#" class="main-nav__link">Teachers</a>
+                                        </li>
+                                        <li class="main-nav__item">
+                                            <a href="news.html" class="main-nav__link">Schedule</a>
+                                        </li>
+                                        <li class="main-nav__item">
+                                            <a href="#" class="main-nav__link">Comments</a>
+                                        </li>
+                                        <li class="main-nav__item">
+                                            <a href="#" class="main-nav__link">Parent's questions</a>
+                                        </li>
+                                        <li class="main-nav__item">
+                                            <a href="#" class="main-nav__link">Vasiliev's blog</a>
+                                        </li>
+                                        <li class="main-nav__item">
+                                            <a href="#" class="main-nav__link">Helpful articles</a>
+                                        </li>
+                                        <li class="main-nav__item">
+                                            <a href="#" class="main-nav__link">Contacts</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
     </header>
 </section>
 <script src="js/vendor.min.js"></script>
